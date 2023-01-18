@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-   "type": "module",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/Ilya-Chu/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Ilya-Chu/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ilya-Chu/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/Ilya-Chu/frontend-project-44#readme"
+  "homepage": "https://github.com/Ilya-Chu/frontend-project-44#readme",
+  "bin": {
+	  "brain-games": "bin/brain-games.js"
+  }
 }
