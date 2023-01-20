@@ -1,7 +1,13 @@
 import { cons, car, cdr } from '@hexlet/pairs';
 import readlineSync from 'readline-sync';
 
+export const randomInteger = (min, max) => {
+  const rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+};
+
 export const gameData = (question, answer) => cons(question, answer);
+
 const getQuestion = (data) => car(data);
 const getCorrectAnswer = (data) => cdr(data);
 
@@ -22,9 +28,4 @@ export const startBrainGame = (rules, updateGameData) => {
     return gameIterator(iter + 1);
   };
   return gameIterator(0);
-};
-
-export const randomInteger = (min, max) => {
-  const rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
 };
