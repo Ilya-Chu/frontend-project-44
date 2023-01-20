@@ -10,7 +10,7 @@ How to intasll
 
 git clone git@github.com:Ilya-Chu/frontend-project-44.git
 make install
-npm install —dry-run
+make publish
 (sudo) npm link
 
 Includes 5 console game:
