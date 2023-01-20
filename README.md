@@ -9,8 +9,11 @@ Education project of Hexlet school 'Brain Games'
 How to intasll
 
 git clone git@github.com:Ilya-Chu/frontend-project-44.git
+
 make install
+
 make publish
+
 (sudo) npm link
 
 Includes 5 console game:
