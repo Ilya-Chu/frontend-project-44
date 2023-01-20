@@ -6,6 +6,13 @@
 
 Education project of Hexlet school 'Brain Games'
 
+How to intasll
+
+git clone git@github.com:Ilya-Chu/frontend-project-44.git
+make install
+npm install —dry-run
+(sudo) npm link
+
 Includes 5 console game:
 
 1. brain-even
