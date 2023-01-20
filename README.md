@@ -6,15 +6,15 @@
 
 Education project of Hexlet school 'Brain Games'
 
-How to intasll
+How to install:
 
-git clone git@github.com:Ilya-Chu/frontend-project-44.git
+1.git clone git@github.com:Ilya-Chu/frontend-project-44.git
 
-make install
+2. make install
 
-make publish
+3. make publish
 
-(sudo) npm link
+4. (sudo) npm link
 
 Includes 5 console game:
 
