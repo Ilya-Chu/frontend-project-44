@@ -4,7 +4,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/9d24d04f6c90885da376/maintainability)](https://codeclimate.com/github/Ilya-Chu/frontend-project-44/maintainability)
 
-Education Profect of Hexlet school 'Brain Games'
+Education project of Hexlet school 'Brain Games'
 
 Includes 5 console game:
 
