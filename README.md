@@ -6,7 +6,7 @@
 
 Education project of Hexlet school 'Brain Games'
 
-How to install:
+How to install: https://asciinema.org/a/14rzVlGtJrnKfy3E4wb4eeJNZ
 
 1. git clone git@github.com:Ilya-Chu/frontend-project-44.git
 
