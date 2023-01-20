@@ -2,7 +2,7 @@ import { startBrainGame, gameData, randomInteger } from '../index.js';
 
 const gcdFinder = (num1, num2) => {
   let gcd = 1;
-  for (let i = 2; i <= num2 / 2; i += 1) {
+  for (let i = 2; i <= num2; i += 1) {
     if (num1 % i === 0 && num2 % i === 0) {
       gcd = i;
     }
