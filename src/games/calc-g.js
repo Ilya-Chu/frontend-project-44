@@ -6,7 +6,7 @@ const questionAnswer = () => {
   const rNum1 = randomInteger(1, 100);
   const rNum2 = randomInteger(1, 100);
   if (operator === 1) {
-    const question = `${rNum1} + ${rNum2}`;
+    const question = `${rNum1}  +${rNum2}`;
     const answer = rNum1 + rNum2;
     return gameData(question, String(answer));
   } if (operator === 2) {
