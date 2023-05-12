@@ -11,7 +11,7 @@ const getGameData= () => {
   let question, answer;
   switch (operator) {
     case '+':
-      question = `${randomNumber1}  + ${randomNumber2}`;
+      question = `${randomNumber1} + ${randomNumber2}`;
       answer = randomNumber1 + randomNumber2;
       break;
     case '-':
