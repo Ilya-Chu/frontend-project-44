@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/Ilya-Chu/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Ilya-Chu/frontend-project-44/actions)",
+  "description": "Hexlet educational project on creating console games.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
