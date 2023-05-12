@@ -1,4 +1,5 @@
-import { startBrainGame, gameData, randomInteger } from '../index.js';
+import { startBrainGame } from '../index.js';
+import { getRandomInteger } from '../utils.js';
 
 const gcdFinder = (num1, num2) => {
   let gcd = 1;
@@ -12,11 +13,11 @@ const gcdFinder = (num1, num2) => {
 const rules = 'Find the greatest common divisor of given numbers.';
 
 const questionAnswer = () => {
-  const rNum1 = randomInteger(1, 100);
-  const rNum2 = randomInteger(1, 10);
+  const rNum1 = getRandomInteger(1, 100);
+  const rNum2 = getRandomInteger(1, 10);
   const question = `${rNum1} ${rNum2}`;
   const answer = gcdFinder(rNum1, rNum2);
-  return gameData(question, String(answer));
+  return [question, String(answer)];
 };
 
 const runGameGCD = () => startBrainGame(rules, questionAnswer);

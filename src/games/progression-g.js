@@ -1,4 +1,5 @@
-import { startBrainGame, gameData, randomInteger } from '../index.js';
+import { startBrainGame } from '../index.js';
+import { getRandomInteger } from '../utils.js';
 
 const rules = 'What number is missing in the progression?';
 
@@ -17,13 +18,13 @@ const getProgression = (start, step, length, hiddenNum) => {
 };
 
 const questionAnswer = () => {
-  const starNum = randomInteger(1, 10);
-  const randStep = randomInteger(1, 5);
-  const randLength = randomInteger(5, 10);
-  const randHiddenNum = randomInteger(2, randLength);
+  const starNum = getRandomInteger(1, 10);
+  const randStep = getRandomInteger(1, 5);
+  const randLength = getRandomInteger(5, 10);
+  const randHiddenNum = getRandomInteger(2, randLength);
   const question = getProgression(starNum, randStep, randLength, randHiddenNum);
   const answer = nFinder(starNum, randStep, randHiddenNum);
-  return gameData(question, String(answer));
+  return [question, String(answer)];
 };
 
 const runGameProgression = () => startBrainGame(rules, questionAnswer);
