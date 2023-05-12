@@ -1,5 +1,5 @@
-import { startBrainGame } from '../index.js';
-import { getRandomInteger } from '../utils.js';
+import startBrainGame from '../index.js';
+import getRandomInteger from '../utils.js';
 
 const instuction = 'What number is missing in the progression?';
 

@@ -1,5 +1,5 @@
-import { startBrainGame } from '../index.js';
-import { getRandomInteger } from '../utils.js';
+import startBrainGame from '../index.js';
+import getRandomInteger from '../utils.js';
 
 const gcdFinder = (num1, num2) => {
   let gcd = 1;

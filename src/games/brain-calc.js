@@ -1,14 +1,15 @@
-import { startBrainGame } from '../index.js';
-import { getRandomInteger } from '../utils.js';
+import startBrainGame from '../index.js';
+import getRandomInteger from '../utils.js';
 
 const instuction = 'What is the result of the expression?';
-const getGameData= () => {
+const getGameData = () => {
   const operators = ['+', '-', '*'];
   const operator = operators[getRandomInteger(0, 2)];
   const randomNumber1 = getRandomInteger(1, 100);
   const randomNumber2 = getRandomInteger(1, 100);
 
-  let question, answer;
+  let question;
+  let answer;
   switch (operator) {
     case '+':
       question = `${randomNumber1} + ${randomNumber2}`;
