@@ -11,8 +11,6 @@ const getProgression = (start, step, length, hiddenIndex) => {
   return progression.join(' ');
 };
 
-
-
 const getGameData = () => {
   const starNum = getRandomInteger(1, 10);
   const randStep = getRandomInteger(1, 5);

@@ -1,6 +1,8 @@
 import startBrainGame from '../index.js';
 import getRandomInteger from '../utils.js';
 
+const instruction = 'What is the result of the expression?';
+
 const doArithmetic = (num1, num2, operator = '+') => {
   let arithmeticResult;
   switch (operator) {
@@ -19,7 +21,6 @@ const doArithmetic = (num1, num2, operator = '+') => {
   return arithmeticResult;
 }
 
-const instuction = 'What is the result of the expression?';
 const getGameData = () => {
   const operators = ['+', '-', '*'];
   const operator = operators[getRandomInteger(0, 2)];
@@ -31,5 +32,5 @@ const getGameData = () => {
 
   return [question, String(answer)];
 };
-const runGameCalc = () => startBrainGame(instuction, getGameData);
+const runGameCalc = () => startBrainGame(instruction, getGameData);
 export default runGameCalc;
