@@ -10,8 +10,7 @@ const startBrainGame = (instuction, generatedGameData) => {
     if (iter === finalRound) {
       return console.log(`Congratulations, ${userName}!`);
     }
-    const data = generatedGameData();
-    const [question, correctAnswer] = data;
+    const [question, correctAnswer] = generatedGameData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (correctAnswer !== userAnswer) {

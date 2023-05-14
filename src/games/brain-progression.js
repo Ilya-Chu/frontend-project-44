@@ -1,32 +1,28 @@
 import startBrainGame from '../index.js';
 import getRandomInteger from '../utils.js';
 
-const instuction = 'What number is missing in the progression?';
+const instruction = 'What number is missing in the progression?';
 
-const getHiddenNumber = (start, step, n) => start + (step * (n - 1));
-
-const getProgression = (start, step, length, hiddenNum) => {
-  let result = String(start);
-  for (let i = 2; i <= length; i += 1) {
-    if (i === hiddenNum) {
-      result += ' ..';
-    } else {
-      result += ` ${getHiddenNumber(start, step, i)}`;
-    }
-  }
-  return result;
+const getProgression = (start, step, length, hiddenIndex) => {
+  const progression = Array(length).fill(0).map((_, i) => {
+    return start + (step * i);
+  });
+  progression[hiddenIndex] = '..';
+  return progression.join(' ');
 };
+
+
 
 const getGameData = () => {
   const starNum = getRandomInteger(1, 10);
   const randStep = getRandomInteger(1, 5);
   const randLength = getRandomInteger(5, 10);
-  const randHiddenNum = getRandomInteger(2, randLength);
+  const randHiddenNum = getRandomInteger(2, randLength - 1);
   const question = getProgression(starNum, randStep, randLength, randHiddenNum);
-  const answer = getHiddenNumber(starNum, randStep, randHiddenNum);
+  const answer = starNum + randStep * randHiddenNum;
   return [question, String(answer)];
 };
 
-const runGameProgression = () => startBrainGame(instuction, getGameData);
+const runGameProgression = () => startBrainGame(instruction, getGameData);
 
 export default runGameProgression;
