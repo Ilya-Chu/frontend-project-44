@@ -9,7 +9,7 @@ const startBrainGame = (instuction, generatedGameData) => {
   const gameIterator = (iter) => {
     if (iter === finalRound) {
       console.log(`Congratulations, ${userName}!`);
-      return
+      return undefined;
     }
     const [question, correctAnswer] = generatedGameData();
     console.log(`Question: ${question}`);
@@ -17,7 +17,7 @@ const startBrainGame = (instuction, generatedGameData) => {
     if (correctAnswer !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. 
 Let's try again, ${userName}!`);
-      return;
+      return undefined;
     }
     console.log('Correct');
     return gameIterator(iter + 1);

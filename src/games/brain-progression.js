@@ -4,9 +4,7 @@ import getRandomInteger from '../utils.js';
 const instruction = 'What number is missing in the progression?';
 
 const getProgression = (start, step, length, hiddenIndex) => {
-  const progression = Array(length).fill(0).map((_, i) => {
-    return start + (step * i);
-  });
+  const progression = Array(length).fill(0).map((_, i) => start + (step * i));
   progression[hiddenIndex] = '..';
   return progression.join(' ');
 };

@@ -17,9 +17,9 @@ const doArithmetic = (num1, num2, operator = '+') => {
       break;
     default:
       throw new Error(`Unexpected operator: ${operator}`);
-  } 
+  }
   return arithmeticResult;
-}
+};
 
 const getGameData = () => {
   const operators = ['+', '-', '*'];
