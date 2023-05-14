@@ -52,6 +52,6 @@ dem: <a href="https://asciinema.org/a/EgD5YNmmunsDFLPI79SDObhCD" target="_blank"
 
 Prime or Not - determine if a given number is prime.
 
-dem: a href="https://asciinema.org/a/qA20wpc0c6ANHINC3csqiRXsx" target="_blank"><img src="https://asciinema.org/a/qA20wpc0c6ANHINC3csqiRXsx.svg" /></a>
+dem: <a href="https://asciinema.org/a/qA20wpc0c6ANHINC3csqiRXsx" target="_blank"><img src="https://asciinema.org/a/qA20wpc0c6ANHINC3csqiRXsx.svg" /></a>
 
 
