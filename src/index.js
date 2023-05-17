@@ -6,23 +6,23 @@ const startBrainGame = (instuction, generatedGameData) => {
   console.log(`Hello, ${userName}!`);
   console.log(instuction);
   const finalRound = 3;
-  const gameIterator = (iter) => {
+  const startNextRound = (iter) => {
     if (iter === finalRound) {
-      const congratulationsMessage = () => console.log(`Congratulations, ${userName}!`);
-      return congratulationsMessage();
+      console.log(`Congratulations, ${userName}!`);
+      return;
     }
     const [question, correctAnswer] = generatedGameData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (correctAnswer !== userAnswer) {
-      const gameOverMessage = () => console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. 
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. 
 Let's try again, ${userName}!`);
-      return gameOverMessage();
+      return;
     }
     console.log('Correct');
-    return gameIterator(iter + 1);
+    startNextRound(iter + 1);
   };
-  return gameIterator(0);
+  startNextRound(0);
 };
 
 export default startBrainGame;

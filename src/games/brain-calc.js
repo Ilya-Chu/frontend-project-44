@@ -4,21 +4,19 @@ import getRandomInteger from '../utils.js';
 const instruction = 'What is the result of the expression?';
 
 const doArithmetic = (num1, num2, operator = '+') => {
-  let arithmeticResult;
   switch (operator) {
     case '+':
-      arithmeticResult = num1 + num2;
+      return num1 + num2;
       break;
     case '-':
-      arithmeticResult = num1 - num2;
+      return num1 - num2;
       break;
     case '*':
-      arithmeticResult = num1 * num2;
+      return num1 * num2;
       break;
     default:
       throw new Error(`Unexpected operator: ${operator}`);
   }
-  return arithmeticResult;
 };
 
 const getGameData = () => {
